@@ -1,8 +1,10 @@
-<b id="message">hi there, this is another project</b>
+<p id="message">hi there, this is another project</p>
 <script>
   window.onload(function() {
     var elem = document.getElementById("message");
+    console.log(elem);
     elem.onclick(function (ev) {
+      console.log(ev);
       ev.target.innerHtml = "you clicked me!";
     })
   })
