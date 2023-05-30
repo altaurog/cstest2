@@ -1,11 +1,13 @@
 <p id="message">hi there, this is another project</p>
 <script>
   window.onload = function() {
+    var times = 1;
     var elem = document.getElementById("message");
     console.log(elem);
     elem.onclick = function (ev) {
       console.log(ev);
-      ev.target.innerHTML = "you clicked me!";
+      ev.target.innerHTML = "you clicked me " + times + " times!";
+      times += 1;
     }
   }
 </script>
