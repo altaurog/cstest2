@@ -1,11 +1,11 @@
 <p id="message">hi there, this is another project</p>
 <script>
-  window.onload(function() {
+  window.onload = function() {
     var elem = document.getElementById("message");
     console.log(elem);
-    elem.onclick(function (ev) {
+    elem.onclick = function (ev) {
       console.log(ev);
       ev.target.innerHtml = "you clicked me!";
-    })
-  })
+    }
+  }
 </script>
